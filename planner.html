@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Planner Features</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tasks">Tasks</a></li>
+                <li><a href="#notes">Notes</a></li>
+                <li><a href="#logout">Logout</a></li>
+            </ul>
+        </nav>
+        <h1>Study Planner Features</h1>
+    </header>
+    <main>
+        <section id="tasks">
+            <h2>Task Calendar</h2>
+            <div id="calendar"></div>
+        </section>
+        <section id="notes">
+            <h2>Make a Note</h2>
+            <form id="noteForm">
+                <label for="note">Note:</label>
+                <textarea id="note" name="note" required></textarea>
+                <button type="submit">Add Note</button>
+            </form>
+            <h2>Saved Notes</h2>
+            <ul id="noteList"></ul>
+        </section>
+    </main>
+        <section id="resources">
+    <h2>Study Resources</h2>
+    <div id="resourcesList">
+        <div class="resource">
+            <h3>Online Libraries</h3>
+            <p><a href="https://www.gutenberg.org/" target="_blank">Project Gutenberg</a> - Free eBooks in the public domain.</p>
+            <p><a href="https://scholar.google.com/" target="_blank">Google Scholar</a> - Search scholarly articles.</p>
+        </div>
+        <div class="resource">
+            <h3>Tutorials and Courses</h3>
+            <p><a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a> - Free educational videos and exercises.</p>
+            <p><a href="https://www.coursera.org/" target="_blank">Coursera</a> - Online courses from top universities.</p>
+        </div>
+        <div class="resource">
+            <h3>Study Tools</h3>
+            <p><a href="https://quizlet.com/" target="_blank">Quizlet</a> - Create flashcards and study games.</p>
+            <p><a href="https://www.wolframalpha.com/" target="_blank">Wolfram Alpha</a> - Computational knowledge engine.</p>
+        </div>
+    </div>
+    <h3>Add New Resource</h3>
+    <form id="addResourceForm">
+        <label for="resourceTitle">Title:</label>
+        <input type="text" id="resourceTitle" name="resourceTitle" required>
+        <label for="resourceDescription">Description:</label>
+        <input type="text" id="resourceDescription" name="resourceDescription" required>
+        <label for="resourceLink">Link:</label>
+        <input type="url" id="resourceLink" name="resourceLink" required>
+        <button type="submit">Add Resource</button>
+    </form>
+    <button id="optionalAddButton">Add New Resource</button> <!-- Optional button -->
+</section>
+<section id="goals">
+    <h2>Set Your Academic Goals</h2>
+    <form id="goalForm">
+        <label for="goalTitle">Goal:</label>
+        <input type="text" id="goalTitle" name="goalTitle" required>
+        <label for="goalDeadline">Deadline:</label>
+        <input type="date" id="goalDeadline" name="goalDeadline" required>
+        <button type="submit">Add Goal</button>
+    </form>
+    <h3>My Goals</h3>
+    <ul id="goalList"></ul>
+</section>
+
+    <footer>
+        <p>&copy; 2024 My Study Planner. All rights reserved.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
